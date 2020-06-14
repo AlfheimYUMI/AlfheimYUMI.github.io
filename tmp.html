@@ -1,75 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 1vw;">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/myStyle.css">
-  <script src="js/bootstrap.min.js"></script>
+  <link rel="Shortcut Icon" type="image/x-icon" href="images/BY.png"/>
+  <title>Bonbon Lin - a cute girl</title>
 </head>
 
-<body style="background: url('images/bg.jpg') no-repeat center center fixed;background-size: cover;">
-  <!-- 弄暗一點的遮罩 -->
-  <div class="container-flude fixed-top" style="background-color: rgba(0, 0, 0, 0.2);height: 100hv;"></div>
-  <!-- 導覽列 -->
-  <nav class="navbar-expand-sm bg-dark fixed-top shadow">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-sm-1">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">
+<!-- <body style="background: url('images/bg.jpg') no-repeat center center fixed;background-size: cover;"> -->
+
+<body class="">
+  <!-- 背景 -->
+  <div class="container-flude fixed-top row bg" style="height: 100vh;width: 100vw;background-color: rgb(189, 204, 216);">
+    <div class="col-5 " style="background-color: rgb(189, 204, 216);"></div>
+    <div class="col-7 d-none d-md-block" style="background-color: white;"></div>
+  </div>
+  <!-- 背景 -->
+  <!-- 導覽列 md-->
+  <div class="d-none d-md-block">
+    <nav class="navbar-expand-sm fixed-top shadow" style="background-color: white;">
+      <div class="container" style="height: max-content;">
+        <div class="row align-items-center" style="height: 15vh;">
+          <div class="col-md-7 d-flex flex-row" style="color: black;">
+            <a class="navbar-brand align-items-center" href="#" style="margin-top: auto;margin-bottom: auto;">
               <img alt="Brand" src="images/BY.png" style="width:35px;">
             </a>
+            <div>
+              <span style="font-size: 40px; color: black;font-weight:bold;">Bonbon Lin</span>
+              <span style="font-size: 25px;">/</span>
+              <span style="color: #0C3C60;">cute girl</span></div>
+          </div>
+          <!-- HEAD -->
+          <div class="col d-flex align-items-end">
+            <div class="navbar-collapse collapse justify-content-end" id="navbars"
+              style="margin-bottom: 0;margin-top: auto;">
+              <ul class="navbar-nav flex-*-grow-1 navbar-item">
+                <li class="nav-item">
+                  <a class="navbar-item active" href="#">ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-item" href="#">RESUME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-item" href="#">CONTACT</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <span class="navbar-text .font-weight-bold .text-left text-white">
-            Website For Us
-          </span>
+      </div>
+    </nav>
+  </div>
+  <!-- 導覽列 md down-->
+  <div class="d-md-none">
+    <nav class="navbar-expand-sm fixed-top shadow" style="background-color: white;">
+      <div class="container align-items-center d-flex flex-row" style="height: 10vh;margin: 0;">
+        <div class="" style="width: 10vh;height: 10vh;">
+          <img class="max" alt="Brand" src="images/BY.png" style="padding: 1.5vh;">
         </div>
-        <div class="col-md">
-          <ul class="navbar-nav justify-content-end flex-*-grow-1">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
-                More
-              </a>
-              <div class="dropdown-menu bg-dark">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-              </div>
-            </li>
-          </ul>
+        <span style="font-size: 30px; color: black;font-weight:bold;">Bonbon Lin</span>
+
+        <div class="flex-grow-1 d-flex flex-row-reverse" style="height: 100%;">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars"
+          aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" style="height: 10vh;width: 10vh;">
+          <img class="max" src="images/Hamburger_icon.svg.png" alt="menu button" style="padding: 0%;">
+        </button>
         </div>
       </div>
-    </div>
-  </nav>
-  <!-- 導覽列 -->
+      
+      <div class="navbar-collapse collapse justify-content-end" id="navbars" style="margin-bottom: 0;margin-top: auto;">
+        <ul class="navbar-nav flex-*-grow-1 navbar-item">
+          <li class="nav-item">
+            <a class="navbar-item active" href="#">ABOUT ME</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-item" href="#">RESUME</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-item" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-  <div class="container-flude">
-    <div style="height: 40px"></div>
-    <!-- 上滾淡化 -->
-    <div style="height: 100vh;text-align:center;">
-      <div style="height: 30vh"></div>
-      <h1 style="font-size:90px;color: rgb(77, 77, 54);">This is me.</h1>
-      <p style="font-size:28px;color: rgb(0, 0, 0);">A little frog at the bottom of the valley<br/>looks at the beautiful blue sky</p>
-    </div>
-    <div class="card border-0 shadow my-5">
-      <div class="card-body p-5">
-        <h1>This is a blank web</h1>
-        <p>Nothing here</p>
-        <div style="height: 700px"></div>
-        <p class="lead mb-0">You've reached the end!</p>
+
+
+  <div class="container ch">
+    <div class="" style="width: 60vw;margin: 0 auto;">
+      <div style="height: 17vh;"></div>
+      <div class="d-none d-md-block" style="height: 8vh;"></div>
+      <div class="row">
+        <div class="col-md-5 np shadow" style="background-color: #D1E0EB;height: 100%;">
+          <div class="frame" style="width: 50%; height: 0;padding-bottom: 50%;margin: 15% auto 10% auto;">
+            <img class="center-max circle" src="images/index/head.jpg" alt="face">
+          </div>
+          <hr class="style-two" />
+          <div style="padding: 5%;">
+            <span style="font-size: 30px; color: black;font-weight:bold;">Bonbon Lin</span>
+            <br/>
+            <span style="font-size: 20px;color: #0C3C60;">cute girl</span>
+          </div>
+        </div>
+        <div class="col" style="text-align: left; font-size: large;">
+          <span style="font-size: 70px;font-weight:bold;">HELLO</span><br />
+          Here's who I am & what I do <br />
+          I'm superwoman!
+        </div>
       </div>
     </div>
   </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

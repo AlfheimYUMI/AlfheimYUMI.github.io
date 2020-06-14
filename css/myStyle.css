@@ -3,8 +3,9 @@
 .dropdown-item {color: white!important;}
 .dropdown-item:hover {color: black!important;}
 .navbar-item {color: black; font-size: 16px; padding: 6px;}
-.navbar-item .active{color: #0C3C60; font-size: 16px; padding: 6px;}
+.navbar-item .active{color: #0C3C60; font-size: 16px; padding: 6px; font-weight: bold;}
 .navbar-item:hover {color: #D1E0EB; font-size: 16px;text-decoration:none;}
+.infocard{background-color: #D1E0EB;}
 .bg {
     position: fixed;
     top: 0;
@@ -19,10 +20,9 @@
 .rh {text-align: right;}
 .max{max-height: 100%;max-width: 100%;width: auto;height: auto;}
 .center-max{ 
-    max-height: 100%;  
-    max-width: 100%; 
+    max-height: 100%;max-width: 100%;
     width: auto;
-    height: auto;
+    height: 100%;
     position: absolute;  
     top: 0;  
     bottom: 0;  
@@ -37,4 +37,17 @@ hr.style-two {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+.ellipsis {
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+.bg-max-center{
+    background: no-repeat center center fixed;
+    background-size: cover;
 }
